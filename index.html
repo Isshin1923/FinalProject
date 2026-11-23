@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BookShelf — Світ книг та рецензій</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Book<span>Shelf</span></a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Головна</a>
+                <a href="pages/catalog.html" class="nav-link">Каталог</a>
+                <a href="pages/about.html" class="nav-link">Про проєкт</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Відкрий для себе наступну улюблену книгу</h1>
+                <p>Кураторська добірка класики, наукової фантастики та сучасної прози. Чесні огляди, рейтинги й
+                    рекомендації для тих, хто любить читати.</p>
+                <a href="pages/catalog.html" class="btn">Перейти до каталогу</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Вибір редакції</h2>
+                <div class="books-grid">
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <span class="book-badge">Фантастика</span>
+                            <img src="image/dune.jpg" alt="Обкладинка книги Дюна">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-author">Френк Герберт</span>
+                            <h4 class="book-title">Дюна (Хроніки Дюни)</h4>
+                            <p class="book-desc">Масштабна сага про пустельну планету Арракіс, політичні інтриги та
+                                боротьбу за найцінніший ресурс у Всесвіті.</p>
+                            <div class="book-meta">
+                                <span class="rating">★ 4.9</span>
+                                <span class="year">1965</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <span class="book-badge">Класика</span>
+                            <img src="image/1984.jpg" alt="Обкладинка книги 1984">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-author">Джордж Орвелл</span>
+                            <h4 class="book-title">1984</h4>
+                            <p class="book-desc">Культова антиутопія про тотальний контроль, свободу думки та ціну
+                                людської індивідуальності.</p>
+                            <div class="book-meta">
+                                <span class="rating">★ 4.8</span>
+                                <span class="year">1949</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <span class="book-badge">Фентезі</span>
+                            <img src="image/witcher.jpg" alt="Обкладинка книги Відьмак">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-author">Анджей Сапковський</span>
+                            <h4 class="book-title">Останнє бажання</h4>
+                            <p class="book-desc">Збірка історій про Ґеральта з Рівії — мисливця на чудовиськ у похмурому
+                                світі слов'янського фентезі.</p>
+                            <div class="book-meta">
+                                <span class="rating">★ 4.9</span>
+                                <span class="year">1993</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Популярні жанри</h2>
+                <div class="genres-grid">
+                    <div class="genre-card">
+                        <h3>Наукова фантастика</h3>
+                        <p>Космос, кіберпанк, антиутопії та технології майбутнього.</p>
+                    </div>
+                    <div class="genre-card">
+                        <h3>Світова класика</h3>
+                        <p>Перевірені часом романи, що змінили літературу.</p>
+                    </div>
+                    <div class="genre-card">
+                        <h3>Детективи та трилери</h3>
+                        <p>Заплутані розслідування й напружені сюжети.</p>
+                    </div>
+                    <div class="genre-card">
+                        <h3>Нон-фікшн</h3>
+                        <p>Наукпоп, психологія, історія та біографії.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 BookShelf</p>
+        </div>
+    </footer>
 </body>
+
 </html>
