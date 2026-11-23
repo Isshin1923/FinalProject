@@ -30,8 +30,15 @@
 
         <section class="section">
             <div class="container">
-                <div class="books-grid">
-                    <article class="book-card">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" class="search-input"
+                        placeholder="Пошук за назвою книги або автором...">
+                </div>
+
+                <div class="books-grid" id="booksGrid">
+                    <article class="book-card" data-genre="Фантастика" data-pages="704 стор."
+                        data-review="«Дюна» поєднує екологічну фантастику, філософію влади та масштабне світобудування. Детально продумана культура фрименів і політичні інтриги роблять роман еталоном жанру."
+                        data-quote="«Я не повинен боятися. Страх убиває розум. Страх — це маленька смерть, що несе повне знищення.»">
                         <div class="book-cover">
                             <span class="book-badge">Фантастика</span>
                             <img src="../image/dune.jpg" alt="Обкладинка книги Дюна">
@@ -45,10 +52,13 @@
                                 <span class="rating">★ 4.9</span>
                                 <span class="year">1965</span>
                             </div>
+                            <button type="button" class="btn-details">Детальніше</button>
                         </div>
                     </article>
 
-                    <article class="book-card">
+                    <article class="book-card" data-genre="Класика" data-pages="328 стор."
+                        data-review="Роман Джорджа Орвелла залишається одним із найвпливовіших творів XX століття. Автор показує механізми маніпуляції свідомістю, новомову та руйнування особистості в тоталітарній системі."
+                        data-quote="«Хто керує минулим — той керує майбутнім; хто керує теперішнім — той керує минулим.»">
                         <div class="book-cover">
                             <span class="book-badge">Класика</span>
                             <img src="../image/1984.jpg" alt="Обкладинка книги 1984">
@@ -62,10 +72,13 @@
                                 <span class="rating">★ 4.8</span>
                                 <span class="year">1949</span>
                             </div>
+                            <button type="button" class="btn-details">Детальніше</button>
                         </div>
                     </article>
 
-                    <article class="book-card">
+                    <article class="book-card" data-genre="Фентезі" data-pages="384 стор."
+                        data-review="Збірка оповідань знайомить читача зі світом Континенту через призму складних моральних дилем, де справжніми чудовиськами часто виявляються люди, а не бестії з лісів."
+                        data-quote="«Зло — це зло, Стреґоборе. Менше, більше, середнє — все одно, пропорції умовні, а межі розмиті.»">
                         <div class="book-cover">
                             <span class="book-badge">Фентезі</span>
                             <img src="../image/witcher.jpg" alt="Обкладинка книги Відьмак">
@@ -79,10 +92,13 @@
                                 <span class="rating">★ 4.9</span>
                                 <span class="year">1993</span>
                             </div>
+                            <button type="button" class="btn-details">Детальніше</button>
                         </div>
                     </article>
 
-                    <article class="book-card">
+                    <article class="book-card" data-genre="Фантастика" data-pages="256 стор."
+                        data-review="Поетична й водночас тривожна історія пожежника Ґая Монтеґа, який починає сумніватися у світі швидких розваг, де жива думка та книги оголошені поза законом."
+                        data-quote="«Є злочини гірші, ніж спалювати книги. Наприклад — не читати їх.»">
                         <div class="book-cover">
                             <span class="book-badge">Фантастика</span>
                             <img src="../image/fahrenheit.jpg" alt="Обкладинка книги 451 градус за Фаренгейтом">
@@ -96,10 +112,13 @@
                                 <span class="rating">★ 4.7</span>
                                 <span class="year">1953</span>
                             </div>
+                            <button type="button" class="btn-details">Детальніше</button>
                         </div>
                     </article>
 
-                    <article class="book-card">
+                    <article class="book-card" data-genre="Детектив" data-pages="288 стор."
+                        data-review="Один із найвідоміших герметичних детективів Агати Крісті. Обмежений простір вагона, дванадцять підозрюваних із різних країн і несподівана розв'язка."
+                        data-quote="«Неможливе не може статися, отже, неможливе має бути можливим попри все.»">
                         <div class="book-cover">
                             <span class="book-badge">Детектив</span>
                             <img src="../image/orient-express.jpg" alt="Обкладинка книги Вбивство у Східному експресі">
@@ -113,10 +132,13 @@
                                 <span class="rating">★ 4.8</span>
                                 <span class="year">1934</span>
                             </div>
+                            <button type="button" class="btn-details">Детальніше</button>
                         </div>
                     </article>
 
-                    <article class="book-card">
+                    <article class="book-card" data-genre="Нон-фікшн" data-pages="544 стор."
+                        data-review="Масштабний науково-популярний синтез історії, біології та економіки, що пояснює, як здатність вірити у спільні міфи дозволила людству об'єднатися."
+                        data-quote="«Історія почалася тоді, коли люди вигадали богів, і закінчиться тоді, коли люди самі стануть богами.»">
                         <div class="book-cover">
                             <span class="book-badge">Нон-фікшн</span>
                             <img src="../image/sapiens.jpg" alt="Обкладинка книги Sapiens">
@@ -130,17 +152,158 @@
                                 <span class="rating">★ 4.6</span>
                                 <span class="year">2011</span>
                             </div>
+                            <button type="button" class="btn-details">Детальніше</button>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-genre="Фентезі" data-pages="320 стор."
+                        data-review="Перша книга культової серії про хлопчика-чарівника, яка відкриває двері до школи магії Гоґвортс. Історія про дружбу, сміливість і вибір, що визначає долю."
+                        data-quote="«Не варто зациклюватися на мріях і забувати жити.»">
+                        <div class="book-cover">
+                            <span class="book-badge">Фентезі</span>
+                            <img src="../image/harry-potter.jpg"
+                                alt="Обкладинка книги Гаррі Поттер і філософський камінь">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-author">Джоан Роулінг</span>
+                            <h4 class="book-title">Гаррі Поттер і філософський камінь</h4>
+                            <p class="book-desc">Початок пригод юного чарівника у стінах Гоґвортсу та його перша зустріч
+                                із темними силами.</p>
+                            <div class="book-meta">
+                                <span class="rating">★ 4.9</span>
+                                <span class="year">1997</span>
+                            </div>
+                            <button type="button" class="btn-details">Детальніше</button>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-genre="Фантастика" data-pages="304 стор."
+                        data-review="Зворушлива науково-фантастична історія у формі щоденникових записів Чарлі Ґордона, який бере участь у науковому експерименті з підвищення інтелекту."
+                        data-quote="«Розум без здатності любити й бути коханим веде до морального та інтелектуального занепаду.»">
+                        <div class="book-cover">
+                            <span class="book-badge">Фантастика</span>
+                            <img src="../image/algernon.jpg" alt="Обкладинка книги Квіти для Елджернона">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-author">Деніел Кіз</span>
+                            <h4 class="book-title">Квіти для Елджернона</h4>
+                            <p class="book-desc">Пронизлива історія про експеримент над людським розумом, самотність і
+                                ціну геніальності.</p>
+                            <div class="book-meta">
+                                <span class="rating">★ 4.9</span>
+                                <span class="year">1966</span>
+                            </div>
+                            <button type="button" class="btn-details">Детальніше</button>
+                        </div>
+                    </article>
+
+                    <article class="book-card" data-genre="Детектив" data-pages="256 стор."
+                        data-review="Один із найатмосферніших детективів про Шерлока Холмса та доктора Ватсона. Похмурі болота Девонширу, сімейне прокляття роду Баскервілів і бездоганна дедукція."
+                        data-quote="«Світ сповнений очевидних речей, яких ніхто ніколи не помічає.»">
+                        <div class="book-cover">
+                            <span class="book-badge">Детектив</span>
+                            <img src="../image/sherlock.png" alt="Обкладинка книги Собака Баскервілів">
+                        </div>
+                        <div class="book-info">
+                            <span class="book-author">Артур Конан Дойл</span>
+                            <h4 class="book-title">Собака Баскервілів</h4>
+                            <p class="book-desc">Розслідування таємничої загибелі сера Чарльза Баскервіля серед туманних
+                                боліт Англії.</p>
+                            <div class="book-meta">
+                                <span class="rating">★ 4.8</span>
+                                <span class="year">1902</span>
+                            </div>
+                            <button type="button" class="btn-details">Детальніше</button>
                         </div>
                     </article>
                 </div>
+
+                <p class="no-results" id="noResults">За вашим запитом книг не знайдено.</p>
+
+
+            </div>
         </section>
     </main>
+
+    <!-- Модальне вікно -->
+    <div class="modal-overlay" id="bookModal" aria-hidden="true">
+        <div class="modal-window" role="dialog" aria-modal="true">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Закрити">&times;</button>
+            <span class="modal-genre" id="modalGenre"></span>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-author" id="modalAuthor"></p>
+            <div class="modal-stats">
+                <span id="modalRating"></span>
+                <span id="modalYear"></span>
+                <span id="modalPages"></span>
+            </div>
+            <p class="modal-review" id="modalReview"></p>
+            <blockquote class="modal-quote" id="modalQuote"></blockquote>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container footer-content">
             <p>&copy; 2026 BookShelf</p>
         </div>
     </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.book-card');
+        const noResults = document.getElementById('noResults');
+
+        // Пошук за назвою або автором
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const title = card.querySelector('.book-title').textContent.toLowerCase();
+                const author = card.querySelector('.book-author').textContent.toLowerCase();
+                const isMatch = title.includes(query) || author.includes(query);
+
+                card.style.display = isMatch ? 'flex' : 'none';
+                if (isMatch) visibleCount++;
+            });
+
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+
+        // Модальне вікно «Детальніше»
+        const modal = document.getElementById('bookModal');
+        const modalClose = document.getElementById('modalClose');
+
+        document.querySelectorAll('.btn-details').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.book-card');
+                document.getElementById('modalGenre').textContent = card.dataset.genre;
+                document.getElementById('modalTitle').textContent = card.querySelector('.book-title').textContent;
+                document.getElementById('modalAuthor').textContent = card.querySelector('.book-author').textContent;
+                document.getElementById('modalRating').textContent = card.querySelector('.rating').textContent;
+                document.getElementById('modalYear').textContent = 'Рік: ' + card.querySelector('.year').textContent;
+                document.getElementById('modalPages').textContent = card.dataset.pages;
+                document.getElementById('modalReview').textContent = card.dataset.review;
+                document.getElementById('modalQuote').textContent = card.dataset.quote;
+
+                modal.classList.add('open');
+                modal.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+        });
+    </script>
 </body>
 
 </html>
